@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="/stylesheet.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/script.js"></script>
 </head>
 
 <body>
@@ -18,25 +19,43 @@
         <div class = "p-3 bg-dark m-3 rounded">
             <h2>Sinner</h2>
 
-            <form action="/action_page.php">
+            <form id="SinnerForm">
                 <div class="mb-3 mt-3">
                     <label for="sbp" class="form-label">Base Power</label>
                     <input type="number" class="form-control" id="sbp" placeholder="Enter Base Power" name="sbp">
                 </div>
                 <div class="mb-3">
                     <label for="scp" class="form-label">Coin Power</label>
-                    <input type="number" class="form-control" id="scp" placeholder="Enter password" name="scp">
+                    <input type="number" class="form-control" id="scp" placeholder="Enter Coin Power" name="scp">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form> 
+                <div class="mb-3">
+                    <label for="scp" class="form-label">Sanity</label>
+                    <input type="number" class="form-control" id="ss" placeholder="Enter Sanity" name="ss">
+                </div>
+            </form>
         </div>
     </div>
     <div class="col-sm-6">
         <div class = "p-3 bg-dark m-3 rounded">
             <h2>Enemy</h2>
+            <form id = "EnemyForm">
+                <div class="mb-3 mt-3">
+                    <label for="ebp" class="form-label">Base Power</label>
+                    <input type="number" class="form-control" id="ebp" placeholder="Enter Base Power" name="ebp">
+                </div>
+                <div class="mb-3">
+                    <label for="ecp" class="form-label">Coin Power</label>
+                    <input type="number" class="form-control" id="ecp" placeholder="Enter Coin Power" name="ecp">
+                </div>
+                <div class="mb-3">
+                    <label for="ecp" class="form-label">Sanity</label>
+                    <input type="number" class="form-control" id="es" placeholder="Enter Sanity" name="es">
+                </div>
+            </form>
         </div>
     </div>
   </div>
+  <button type="button" id="Submitter" class="btn btn-primary">Submit</button>
 </div>
 
 </body>
